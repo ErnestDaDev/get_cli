@@ -199,7 +199,7 @@ class PubspecUtils {
   }
 
   static void _savePub(dynamic pub) {
-    var value = CliYamlToString().toYamlString(pub.toJson());
+    var value = CliYamlToString().toYamlString(pub);
     _pubspecFile.writeAsStringSync(value);
   }
 }
